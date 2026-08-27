@@ -8,13 +8,13 @@ A clean, vectorized implementation of Multivariate Linear Regression and Gradien
 
 ### 1. Model Prediction (Hypothesis)
 The linear regression model predicts target values using a linear combination of input features:
-$$ f_{w,b}(\mathbf{x}) = \mathbf{w} \cdot \mathbf{x} + b $$
+
+$$ f_{\mathbf{w},b}(\mathbf{x}) = \mathbf{w}^T \mathbf{x} + b $$
 
 Where:
-* $\mathbf{w}$ is the parameter weight vector of shape $(n,)$.
+* $\mathbf{w}$ is the weight vector of shape $(n, 1)$.
+* $\mathbf{x}$ is the feature vector of shape $(n, 1)$.
 * $b$ is the scalar bias parameter.
-* $\mathbf{x}$ is the feature vector of shape $(n,)$.
-
 ---
 
 ### 2. Cost Function (Mean Squared Error)
